@@ -21,6 +21,7 @@
                     <li><a href="#stock-list">Stock List</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#transactions-form">Transactions</a></li>
+                    <li><a href="#virtual-funds">Virtual Funds</a></li>
                 </ul>
             </nav>
 
@@ -55,7 +56,7 @@
 
         <h2>Transactions</h2>
         <form id="transactions-form">
-            <label for="stock">Stock:</label>
+            <label for="stock" style="color: white;">Stock:</label>
                 <select id="stock" required>
                     <option value="" disabled selected>Select Stock</option>
                     <option value="Tesla, Inc. (TSLA)">Tesla, Inc. (TSLA)</option>
@@ -65,16 +66,16 @@
                     <option value="Johnson &amp; Johnson (JNJ)">Johnson &amp; Johnson (JNJ)</option>
                 </select>
             
-            <label for="quantity">Quantity:</label>
+            <label for="quantity" style="color: white;">Quantity:</label>
             <input type="number" id="quantity" required>
-            <label for="action">Action:</label>
+            <label for="action" style="color: white;">Action:</label>
             <select id="action" required>
                 <option value="">Select Action</option>
                 <option value="buy">Buy</option>
                 <option value="sell">Sell</option>
             </select>
 
-            <button type="submit">Submit</button>
+            <button type="submit" style="color: white;">Submit</button>
         </form>
         
         <h2>Portfolio Overview</h2>
@@ -82,6 +83,10 @@
             <ul id="portfolio-items"></ul>
             <div id="portfolio-profit"></div>
         </div>
+
+        <h2>Virtual Funds Allocation</h2>
+        <div id="virtual-funds">Remaining Funds: Rs. 100,000</div>
+
     </main>
 
     <footer>
