@@ -1,3 +1,5 @@
+let initialFunds = 100000;
+let remainingFunds = initialFunds;
 document.getElementById('transactions-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -33,6 +35,10 @@ function updatePortfolioProfit() {
 
         totalProfit += quantity * stockValue;
     }
+    remainingFunds = initialFunds - totalProfit; // Calculate the remaining funds
+    
 
     document.getElementById('portfolio-profit').textContent = 'Profit: $' + totalProfit;
+    document.getElementById('virtual-funds').textContent = 'Remaining Funds: Rs. ' + remainingFunds;
+
 }
