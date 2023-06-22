@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Investa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background"></div>
+    <header>
+        <h1>Virtual Investa</h1>
+        <div id="header">
+        <div class="container">
+
+            <nav>
+                <ul>
+                    <li><a href="#user-login">User-Login</a></li>
+                    <li><a href="#stock-list">Stock List</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#transactions-form">Transactions</a></li>
+                </ul>
+            </nav>
+
+    <main>
+        <h2>User-Login</h2>
+        <div id="user-login" class="user-login">
+            <div class="user-input">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="user-input">
+                <label for="id">ID:</label>
+                <input type="text" id="id" placeholder="Enter your ID">
+            </div>
+            <div class="user-input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button>Login</button>
+        </div>
+        <h2>Stock List</h2>
+        <ul id="stock-list" class="stock-list-items">
+            <li>Tesla, Inc. (TSLA)</li>
+            <li>Netflix, Inc. (NFLX)</li>
+            <li>Adobe Inc. (ADBE)</li>
+            <li>PayPal Holdings, Inc. (PYPL)</li>
+            <li>Johnson & Johnson (JNJ)</li>
+        </ul>
+
+        
+        
+
+        <h2>Transactions</h2>
+        <form id="transactions-form">
+            <label for="stock">Stock:</label>
+                <select id="stock" required>
+                    <option value="" disabled selected>Select Stock</option>
+                    <option value="Tesla, Inc. (TSLA)">Tesla, Inc. (TSLA)</option>
+                    <option value="Netflix, Inc. (NFLX)">Netflix, Inc. (NFLX)</option>
+                    <option value="Adobe Inc. (ADBE)">Adobe Inc. (ADBE)</option>
+                    <option value="PayPal Holdings, Inc. (PYPL)">PayPal Holdings, Inc. (PYPL)</option>
+                    <option value="Johnson &amp; Johnson (JNJ)">Johnson &amp; Johnson (JNJ)</option>
+                </select>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <label for="action">Action:</label>
+            <select id="action" required>
+                <option value="">Select Action</option>
+                <option value="buy">Buy</option>
+                <option value="sell">Sell</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        
+        <h2>Portfolio Overview</h2>
+        <div id="portfolio">
+            <ul id="portfolio-items"></ul>
+            <div id="portfolio-profit"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Virtual Investa. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
